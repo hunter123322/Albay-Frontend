@@ -64,7 +64,7 @@ const mockAds: Ad[] = [
         identifier: 'AD_HOME_TOP',
         type: 'image',
         title: 'Premium Resort in Albay',
-        image_url: '/images/mock-ad.jpg',
+        image_url: '/img/hero.jpg',
         link: '#',
         is_active: true
     },

@@ -21,14 +21,16 @@
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <PremiumCard v-for="item in premiumListings" :key="item._id" :listing="item" />
+                    <PremiumCard v-for="(item, index) in premiumListings" :key="item._id" :listing="item"
+                        :index="index" />
                 </div>
             </section>
 
             <!-- Grid Listings -->
             <section>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <ListingCard v-for="item in paginatedListings" :key="item._id" :listing="item" />
+                    <ListingCard v-for="(item, index) in paginatedListings" :key="item._id" :listing="item"
+                        :index="index" />
                 </div>
             </section>
 

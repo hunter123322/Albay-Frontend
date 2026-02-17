@@ -13,28 +13,41 @@
                 </p>
             </div>
 
-            <!-- Premium Terminals -->
-            <section v-if="premiumTerminals.length" class="mb-12">
-                <h2 class="text-xl font-semibold text-blue-700 mb-6">
-                    Featured Terminals
-                </h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <PremiumCard v-for="terminal in premiumTerminals" :key="terminal._id" :listing="terminal" />
-                </div>
-            </section>
-
-            <!-- Terminals Grid -->
+            <!-- Terminals Grid (Public Only) -->
             <section>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <ListingCard v-for="terminal in paginatedTerminals" :key="terminal._id" :listing="terminal" />
+                    <div v-for="terminal in paginatedTerminals" :key="terminal._id"
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-md transition overflow-hidden">
+                        <img :src="terminal.cover_image" :alt="terminal.title" class="w-full h-40 object-cover" />
+
+                        <div class="p-4 space-y-2">
+                            <h2 class="font-semibold text-blue-700">
+                                {{ terminal.title }}
+                            </h2>
+
+                            <p class="text-xs text-gray-500">
+                                {{ terminal.municipality }}
+                            </p>
+
+                            <p class="text-sm text-gray-600 line-clamp-2">
+                                {{ terminal.description }}
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span v-for="tag in terminal.activity_tags" :key="tag"
+                                    class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
+                                    {{ tag }}
+                                </span>
+                            </div>
+
+                            <a :href="`/terminals/${terminal.slug}`"
+                                class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+                                View Details →
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
-
-            <!-- Inline Ad -->
-            <div class="mt-12">
-                <AdSlot identifier="AD_TERMINALS_INLINE" />
-            </div>
 
             <!-- Pagination -->
             <div class="flex justify-center mt-12 gap-3">
@@ -59,9 +72,6 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import ListingCard from '~/components/cards/ListingCard.vue'
-import PremiumCard from '~/components/cards/PremiumCard.vue'
-import AdSlot from '~/components/ads/AdSlot.vue'
 import PublicLayout from '~/layouts/PublicLayout.vue'
 
 interface Terminal {
@@ -121,7 +131,7 @@ const terminals = ref<Terminal[]>(
         pricing_lowest: null,
         operating_hours: '24/7',
         rating: null,
-        is_premium: index < 1,
+        is_premium: false,
         view_count: 300 - index * 15,
         created_at: new Date()
     }))
@@ -130,20 +140,12 @@ const terminals = ref<Terminal[]>(
 const page = ref(1)
 const perPage = 12
 
-const premiumTerminals = computed(() =>
-    terminals.value.filter(t => t.is_premium).slice(0, 4)
-)
-
-const nonPremiumTerminals = computed(() =>
-    terminals.value.filter(t => !t.is_premium)
-)
-
 const totalPages = computed(() =>
-    Math.ceil(nonPremiumTerminals.value.length / perPage)
+    Math.ceil(terminals.value.length / perPage)
 )
 
 const paginatedTerminals = computed(() => {
     const start = (page.value - 1) * perPage
-    return nonPremiumTerminals.value.slice(start, start + perPage)
+    return terminals.value.slice(start, start + perPage)
 })
 </script>

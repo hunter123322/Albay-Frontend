@@ -8,7 +8,7 @@
 
                 <!-- Logo -->
                 <NuxtLink to="/" class="flex items-center gap-2 font-semibold text-lg tracking-wide">
-                    <MapPin class="w-5 h-5" />
+                    <img src="../assets/logo2.jpg" alt="Albay Tourust Logo | Logo" class="rounded-full w-10">
                     <span>Discover Albay</span>
                 </NuxtLink>
 
