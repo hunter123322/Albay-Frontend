@@ -204,11 +204,11 @@ const featuredBusinesses = ref([])
 const terminals = ref([])
 
 const categories = [
-  { name: 'Tourist Spots', link: '/tourist-spots', image: '/img/categories/spots.jpg' },
-  { name: 'Restaurants', link: '/restaurants', image: '/img/categories/restaurant.jpg' },
-  { name: 'Hotels', link: '/hotels', image: '/img/categories/hotels.jpeg' },
-  { name: 'Terminals', link: '/terminals', image: '/img/categories/terminals.jpg' },
-  { name: 'Tour Guides', link: '/tour-guides', image: '/img/categories/guides.jpg' },
+  { name: 'Tourist Spots', link: '/tourist-spots', image: '/Albay-Frontend/img/categories/spots.jpg' },
+  { name: 'Restaurants', link: '/restaurants', image: '/Albay-Frontend/img/categories/restaurant.jpg' },
+  { name: 'Hotels', link: '/hotels', image: '/Albay-Frontend/img/categories/hotels.jpeg' },
+  { name: 'Terminals', link: '/terminals', image: '/Albay-Frontend/img/categories/terminals.jpg' },
+  { name: 'Tour Guides', link: '/tour-guides', image: '/Albay-Frontend/img/categories/guides.jpg' },
 ]
 
 const handleAutocomplete = () => {
@@ -237,9 +237,9 @@ const submitSearch = () => {
 onMounted(async () => {
   // Mock Data
   topAttractions.value = [
-    { id: 4, title: 'Mayon Sky Line', municipality: 'Tabaco', slug: 'mayon-skyline-view-deck', cover_image: '/img/topAttraction/mayonskyline.jpg' },
-    { id: 2, title: 'Cagsawa Ruins', municipality: 'Daraga', slug: 'cagsawa-ruins', cover_image: '/img/topAttraction/cagsawaruins.jpg' },
-    { id: 3, title: 'Sumlang Lake', municipality: 'Camalig', slug: 'sumlang-lake', cover_image: '/img/topAttraction/sumlanglake.jpg' },
+    { id: 4, title: 'Mayon Sky Line', municipality: 'Tabaco', slug: 'mayon-skyline-view-deck', cover_image: '/Albay-Frontend/img/topAttraction/mayonskyline.jpg' },
+    { id: 2, title: 'Cagsawa Ruins', municipality: 'Daraga', slug: 'cagsawa-ruins', cover_image: '/Albay-Frontend/img/topAttraction/cagsawaruins.jpg' },
+    { id: 3, title: 'Sumlang Lake', municipality: 'Camalig', slug: 'sumlang-lake', cover_image: '/Albay-Frontend/img/topAttraction/sumlanglake.jpg' },
   ]
   const elements = document.querySelectorAll('.animate-on-scroll');
 
@@ -265,7 +265,7 @@ onMounted(async () => {
       slug: "7-eleven-salugan",
       pricing_lowest: " Free",
       category: ["tourist-spots"],
-      cover_image: "/img/tendingSpots/7-11.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/7-11.jpg",
       description: "The viral Mayon-view convenience store in Camalig has become one of the most photographed roadside stops in Albay. Positioned perfectly along the highway, it offers a clear and dramatic backdrop of Mayon Volcano, making it a favorite among travelers, cyclists, and motorists who want a quick yet stunning photo opportunity. Its resemblance to Japan’s famous Fuji-Lawson viewpoint earned it the nickname as the Pinoy version of that iconic spot.\n\nBeyond being a social media favorite, the location serves as a practical rest stop where visitors can grab snacks, drinks, and essentials while enjoying the scenery. Sunrise and late afternoon are the best times to visit, when the lighting enhances Mayon’s near-perfect cone and creates a postcard-worthy view right from the parking area."
     },
     {
@@ -275,7 +275,7 @@ onMounted(async () => {
       pricing_lowest: "85",
       slug: "farm-plate-daraga",
       category: ["tourist-spots"],
-      cover_image: "/img/tendingSpots/farmplate.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/farmplate.jpg",
       description: "Farm Plate in Daraga is a charming farm-themed destination known for its wide open spaces and uninterrupted views of Mayon Volcano. The property features landscaped gardens, vegetable plots, and a striking red chapel that has become a popular backdrop for photos, prenups, and casual visits. Its elevated terrain allows guests to appreciate Mayon’s symmetry from multiple vantage points.\n\nVisitors can enjoy simple farm-to-table meals, relax in picnic areas, or explore the grounds at a leisurely pace. The peaceful rural setting, combined with cool breezes and scenic views, makes it ideal for families, couples, and anyone seeking a calm escape just minutes away from the town center."
     },
     {
@@ -285,7 +285,7 @@ onMounted(async () => {
       slug: "sumlang-lake",
       pricing_lowest: "50",
       category: ["tourist-spots", "nature"],
-      cover_image: "/img/tendingSpots/sumlanglake.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/sumlanglake.jpg",
       description: "Sumlang Lake in Camalig is well known for its calm waters that mirror the majestic shape of Mayon Volcano. The lake’s bamboo rafts allow visitors to paddle gently across the surface while enjoying an unobstructed view of the volcano, especially during clear mornings when the reflection appears almost symmetrical.\n\nAside from rafting, the area offers landscaped gardens, view decks, and open-air dining spaces where guests can relax and take photos. The combination of still water, greenery, and Mayon’s dramatic presence makes Sumlang Lake one of the most photogenic and tranquil destinations in Albay."
     },
     {
@@ -295,7 +295,7 @@ onMounted(async () => {
       slug: "national-museum-bicol",
       pricing_lowest: "30",
       category: ["tourist-spots"],
-      cover_image: "/img/tendingSpots/museum.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/museum.jpg",
       description: "The National Museum of the Philippines – Bicol, located in Daraga, is housed in a beautifully restored historic building that stands as an architectural landmark in the region. The museum showcases exhibits on Bicol’s natural history, geology, archaeology, and cultural heritage, offering visitors a deeper understanding of the area’s identity and volcanic landscape.\n\nInside, curated galleries present artifacts, historical narratives, and scientific displays that explain the formation of Mayon Volcano and the resilience of local communities. The blend of heritage architecture and educational exhibits makes it a meaningful stop for travelers interested in history, culture, and regional development."
     },
     {
@@ -305,7 +305,7 @@ onMounted(async () => {
       slug: "mayon-black-lava-atv-trails",
       pricing_lowest: "50",
       category: ["adventure"],
-      cover_image: "/img/tendingSpots/blacklava.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/blacklava.jpg",
       description: "Mayon Black Lava ATV Trails in Legazpi City offers an adrenaline-driven experience across the rugged terrain shaped by Mayon Volcano’s past eruptions. Riders navigate through fields of hardened black lava rocks, ash trails, and off-road paths while heading closer to the volcano’s base.\n\nThe guided tours vary in difficulty, making the activity accessible for beginners and experienced riders alike. Along the route, scenic stops provide panoramic views of Mayon and the surrounding landscape, combining adventure with dramatic natural scenery."
     },
     {
@@ -315,7 +315,7 @@ onMounted(async () => {
       slug: "cagsawa-ruins",
       pricing_lowest: "30",
       category: ["tourist-spots"],
-      cover_image: "/img/tendingSpots/cagsawaruins.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/cagsawaruins.jpg",
       description: "Cagsawa Ruins in Daraga is one of the most iconic historical landmarks in Albay. The remaining bell tower of the 16th-century Franciscan church stands as a reminder of the devastating 1814 eruption of Mayon Volcano, which buried the original town of Cagsawa under volcanic debris.\n\nToday, the site functions as both a heritage park and a major viewpoint for Mayon Volcano. Visitors can walk around landscaped grounds, explore small museums and souvenir shops, and capture classic photographs of the belfry framed by Mayon’s near-perfect cone."
     },
     {
@@ -325,7 +325,7 @@ onMounted(async () => {
       slug: "quitinday-green-hills",
       pricing_lowest: " N/A",
       category: ["tourist-spots"],
-      cover_image: "/img/tendingSpots/albayhills.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/albayhills.jpg",
       description: "Quitinday Green Hills in Camalig features rolling grassy mounds that resemble miniature versions of the famous Chocolate Hills. The gentle slopes create a layered landscape that becomes especially vibrant during the rainy season when the grass turns lush and bright green.\n\nFrom the top of the hills, visitors are rewarded with sweeping views of Albay’s countryside and a clear perspective of Mayon Volcano. The relatively short trek makes it accessible for casual hikers, while the panoramic scenery makes it a popular sunrise and sunset spot."
     },
     {
@@ -335,7 +335,7 @@ onMounted(async () => {
       slug: "vera-falls",
       pricing_lowest: "20",
       category: ["tourist-spots"],
-      cover_image: "/img/tendingSpots/verafalls.jpg",
+      cover_image: "/Albay-Frontend/img/tendingSpots/verafalls.jpg",
       description: "Vera Falls in Malinao is a serene waterfall hidden at the foot of Mount Malinao, surrounded by dense greenery and cool mountain air. The cascading waters flow into a natural pool, offering visitors a refreshing place to swim and relax away from the busy urban areas.\n\nReaching the falls involves a short trek through forested paths, adding a sense of adventure to the visit. Its tranquil atmosphere and natural setting make Vera Falls an ideal destination for nature lovers seeking a quiet and scenic retreat."
     }
   ]
@@ -347,7 +347,7 @@ onMounted(async () => {
       title: 'Kuya Jims Ice Cream',
       municipality: 'Bacacay Albay',
       slug: 'Ice-Cream',
-      cover_image: '/img/icecream.png',
+      cover_image: '/Albay-Frontend/img/icecream.png',
       isBlack: true
     },
     {
@@ -355,7 +355,7 @@ onMounted(async () => {
       title: 'Cake Amiga',
       municipality: 'Bacacay Albay',
       slug: 'Cake-Amiga',
-      cover_image: '/img/cakeAmiga.png',
+      cover_image: '/Albay-Frontend/img/cakeAmiga.png',
       isBlack: true
 
     },
@@ -364,7 +364,7 @@ onMounted(async () => {
       title: 'A Not So Popular Kid',
       municipality: 'Philippines',
       slug: 'A-Not-So-Popular-Kid',
-      cover_image: '/img/sponsor1.jpg',
+      cover_image: '/Albay-Frontend/img/sponsor1.jpg',
       isBlack: true
 
     }
@@ -375,7 +375,7 @@ onMounted(async () => {
     id: i,
     name: `Terminal ${i + 1}`,
     municipality: 'Legazpi',
-    cover_image: '/img/terminals/legazpiterminal.jpg'
+    cover_image: '/Albay-Frontend/img/terminals/legazpiterminal.jpg'
   }))
 })
 </script>

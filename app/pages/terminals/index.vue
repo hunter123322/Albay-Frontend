@@ -125,7 +125,7 @@ const terminals = ref<Terminal[]>(
         _id: String(index + 1),
         slug: '',
         title: name,
-        cover_image: '/img/hero.jpg',
+        cover_image: '/Albay-Frontend/img/hero.jpg',
         description: `${name} serves as a primary transport hub for commuters and travelers in Albay.`,
         category: ['terminals'],
         municipality: 'Albay',

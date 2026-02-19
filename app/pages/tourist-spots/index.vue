@@ -169,7 +169,7 @@ const listings = ref<Listing[]>([
     _id: "3",
     slug: "quitinday-green-hills",
     title: "Quitinday Green Hills",
-    cover_image: "/img/tendingSpots/albayHills.jpg",
+    cover_image: "/Albay-Frontend/img/tendingSpots/albayHills.jpg",
     description:
       "Quitinday Green Hills is known for its scenic rolling hills and relaxing environment.",
     category: ["tourist-spots"],
@@ -192,7 +192,7 @@ const listings = ref<Listing[]>([
     _id: "4",
     slug: "sumlang-lake",
     title: "Sumlang Lake",
-    cover_image: "/img/tendingSpots/sumlanglake.jpg",
+    cover_image: "/Albay-Frontend/img/tendingSpots/sumlanglake.jpg",
     description:
       "Sumlang Lake offers peaceful lake views with a perfect backdrop of Mayon Volcano.",
     category: ["tourist-spots"],
@@ -215,7 +215,7 @@ const listings = ref<Listing[]>([
     _id: "5",
     slug: "busay-falls",
     title: "Busay Falls",
-    cover_image: "/img/tendingSpots/verafalls.jpg",
+    cover_image: "/Albay-Frontend/img/tendingSpots/verafalls.jpg",
     description:
       "Busay Falls is a refreshing waterfall destination surrounded by lush greenery.",
     category: ["tourist-spots"],
@@ -238,7 +238,7 @@ const listings = ref<Listing[]>([
     _id: "1",
     slug: "mayon-volcano-natural-park",
     title: "Mayon Volcano Natural Park",
-    cover_image: "/img/hero.jpg",
+    cover_image: "/Albay-Frontend/img/hero.jpg",
     description:
       "Mayon Volcano Natural Park is one of the well-known attractions in Albay offering scenic views and outdoor activities.",
     category: ["tourist-spots"],
@@ -261,7 +261,7 @@ const listings = ref<Listing[]>([
     _id: "2",
     slug: "lignon-hill-nature-park",
     title: "Lignon Hill Nature Park",
-    cover_image: "/img/tendingSpots/hills.jpg",
+    cover_image: "/Albay-Frontend/img/tendingSpots/hills.jpg",
     description:
       "Lignon Hill Nature Park offers panoramic views of Mayon and exciting outdoor activities.",
     category: ["tourist-spots"],
@@ -289,7 +289,7 @@ const premiumListings = [
     _id: 1,
     slug: 'quituinan-ranch',
     title: 'Quituinan Ranch',
-    cover_image: '/img/touristSpots/quituinan.jpg',
+    cover_image: '/Albay-Frontend/img/touristSpots/quituinan.jpg',
     description: 'Quituinan Ranch in Camalig, Albay offers panoramic views of Mayon Volcano surrounded by vast green fields and grazing cattle. Known for its peaceful countryside atmosphere, it is a favorite for photography, sightseeing, and sunset viewing with the iconic volcano as backdrop.',
     category: ['tourist-spots'],
     municipality: 'Camalig',
@@ -312,7 +312,7 @@ const premiumListings = [
     _id: 2,
     slug: 'farm-plate-daraga',
     title: 'FarmPlate',
-    cover_image: '/img/touristSpots/farmplate.jpg',
+    cover_image: '/Albay-Frontend/img/touristSpots/farmplate.jpg',
     description: 'FarmPlate in Daraga, Albay is a beautifully landscaped agri-tourism destination featuring a red mini chapel, picnic grounds, pigeon houses, and scenic views of Mayon Volcano. It blends rural charm with curated photo spots, making it one of the most Instagrammable attractions in the province.',
     category: ['tourist-spots'],
     municipality: 'Daraga',

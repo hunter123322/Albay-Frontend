@@ -5,7 +5,7 @@
     ]">
         <!-- Image -->
         <div class="relative h-64 overflow-hidden">
-            <img :src="listing.cover_image || '/img/hero.jpg'" :alt="listing.title"
+            <img :src="listing.cover_image || '/Albay-Frontend/img/hero.jpg'" :alt="listing.title"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
 
             <div v-if="listing.gradient"

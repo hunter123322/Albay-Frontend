@@ -3,7 +3,7 @@
         class="group relative block bg-white rounded-3xl overflow-hidden ring-1 ring-slate-100 hover:ring-slate-200 transition-all duration-500 hover:-translate-y-1 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)]">
         <!-- Image Container -->
         <div class="relative aspect-[4/5] overflow-hidden">
-            <img :src="listing.cover_image || '/img/hero.jpg'" :alt="listing.title"
+            <img :src="listing.cover_image || '/Albay-Frontend/img/hero.jpg'" :alt="listing.title"
                 class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                 loading="lazy" />
 

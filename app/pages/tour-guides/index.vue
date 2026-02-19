@@ -114,7 +114,7 @@ const guides = ref<Guide[]>(
         _id: String(index + 1),
         slug: generateSlug(name),
         title: name,
-        cover_image: '/img/hero.jpg',
+        cover_image: '/Albay-Frontend/img/hero.jpg',
         description: `${name} provides professional local guiding services for tourists visiting Albay.`,
         category: ['tour-guides'],
         municipality: 'Albay',

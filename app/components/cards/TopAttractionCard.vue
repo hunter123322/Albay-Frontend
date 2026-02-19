@@ -2,7 +2,7 @@
     <NuxtLink :to="`/${listing.category?.[0] || 'tourist-spots'}/${listing.slug}`"
         class="relative block w-full h-[420px] md:h-[520px] overflow-hidden group">
         <!-- Background Image -->
-        <img :src="listing.cover_image || '/img/hero.jpg'" :alt="listing.title"
+        <img :src="listing.cover_image || '/Albay-Frontend/img/hero.jpg'" :alt="listing.title"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
 
         <!-- Gradient Overlay -->

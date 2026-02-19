@@ -135,7 +135,7 @@ const mockGuides: Guide[] = [
         _id: '1',
         slug: 'mayon-volcano-trek-guide',
         title: 'Mayon Volcano Trek Guide',
-        cover_image: '/img/hero.jpg',
+        cover_image: '/Albay-Frontend/img/hero.jpg',
         description: 'Professional trekking guide specializing in Mayon Volcano trails and adventure tours.',
         category: ['tour-guides'],
         municipality: 'Legazpi City',

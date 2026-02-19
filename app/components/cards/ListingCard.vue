@@ -4,7 +4,7 @@
 
         <!-- Image -->
         <div class="relative h-48 overflow-hidden">
-            <img :src="listing.cover_image || '/img/hero.jpg'" :alt="listing.title"
+            <img :src="listing.cover_image || '/Albay-Frontend/img/hero.jpg'" :alt="listing.title"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
 
             <!-- Rating Badge -->

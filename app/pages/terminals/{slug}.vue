@@ -130,7 +130,7 @@ const mockTerminals: Terminal[] = [
         _id: '1',
         slug: 'legazpi-grand-terminal',
         title: 'Legazpi Grand Terminal',
-        cover_image: '/img/hero.jpg',
+        cover_image: '/Albay-Frontend/img/hero.jpg',
         description: 'Main transportation hub in Legazpi City serving buses, jeepneys, and vans for provincial and local routes.',
         category: ['terminals'],
         municipality: 'Legazpi City',
