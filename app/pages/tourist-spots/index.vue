@@ -81,7 +81,7 @@
               <p class="text-sm text-slate-500">
                 Showing <span class="font-medium text-slate-900">{{ (page - 1) * perPage + 1 }}</span> to
                 <span class="font-medium text-slate-900">{{ Math.min(page * perPage, nonPremiumListings.length)
-                  }}</span> of
+                }}</span> of
                 <span class="font-medium text-slate-900">{{ nonPremiumListings.length }}</span> results
               </p>
             </div>
