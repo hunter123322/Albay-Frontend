@@ -169,7 +169,7 @@ const listings = ref<Listing[]>([
     _id: "3",
     slug: "quitinday-green-hills",
     title: "Quitinday Green Hills",
-    cover_image: "/Albay-Frontend/img/tendingSpots/albayHills.jpg",
+    cover_image: "/Albay-Frontend/img/tendingSpots/albayhills.jpg",
     description:
       "Quitinday Green Hills is known for its scenic rolling hills and relaxing environment.",
     category: ["tourist-spots"],
