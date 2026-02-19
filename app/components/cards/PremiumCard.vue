@@ -25,7 +25,7 @@
             </div>
 
             <!-- Content -->
-            <div class="absolute bottom-0 left-0 right-0 p-5 text-white space-y-2">
+            <div class="absolute bottom-0 left-0 right-0 px-5 pb-5 space-y-2" :class="listing.isBlack ? 'text-black  backdrop-blur' : 'text-white' ">
                 <h3 class="text-lg font-semibold leading-tight line-clamp-2">
                     {{ listing.title }}
                 </h3>

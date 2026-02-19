@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink ref="cardRef" :to="`/tourist-spots/${listing.slug}`"
+    <NuxtLink ref="cardRef" :to="`/${primaryCategory}/${listing.slug}`"
         class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 ring-1 ring-slate-100 opacity-0">
 
         <!-- Image -->
@@ -38,9 +38,9 @@
                 ₱{{ listing.pricing_lowest.toLocaleString() }}
             </div>
 
-            <div v-if="listing.description" class="text-[11px] text-gray-600">
+            <!-- <div v-if="listing.description" class="text-[11px] text-gray-600">
                 {{ listing.description }}
-            </div>
+            </div> -->
         </div>
     </NuxtLink>
 </template>

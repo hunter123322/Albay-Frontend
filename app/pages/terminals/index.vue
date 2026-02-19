@@ -5,9 +5,13 @@
 
             <!-- Header -->
             <div class="mb-8">
+                <h1 class="text-5xl font-bold text-red-600">
+                    Under Development
+                </h1>
                 <h1 class="text-3xl font-bold text-blue-700">
                     Transport Terminals
                 </h1>
+
                 <p class="text-sm text-gray-500 mt-2">
                     Find bus, jeepney, van, and transport terminals across Albay.
                 </p>
@@ -66,6 +70,8 @@
                 </button>
             </div>
 
+
+
         </div>
     </PublicLayout>
 </template>
@@ -117,7 +123,7 @@ const generateSlug = (name: string) =>
 const terminals = ref<Terminal[]>(
     rawTerminals.map((name, index) => ({
         _id: String(index + 1),
-        slug: generateSlug(name),
+        slug: '',
         title: name,
         cover_image: '/img/hero.jpg',
         description: `${name} serves as a primary transport hub for commuters and travelers in Albay.`,

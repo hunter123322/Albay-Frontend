@@ -5,6 +5,9 @@
 
             <!-- Header -->
             <div class="mb-8">
+                <h1 class="text-5xl font-bold text-red-600">
+                    Under Development
+                </h1>
                 <h1 class="text-3xl font-bold text-blue-700">
                     Tour Guides
                 </h1>
@@ -20,14 +23,16 @@
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <PremiumCard v-for="(guide, index) in premiumGuides" :key="guide._id" :listing="guide" :index="index" />
+                    <PremiumCard v-for="(guide, index) in premiumGuides" :key="guide._id" :listing="guide"
+                        :index="index" />
                 </div>
             </section>
 
             <!-- Guide Grid -->
             <section>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <ListingCard v-for="(guide, index) in paginatedGuides" :key="guide._id" :listing="guide" :index="index" />
+                    <ListingCard v-for="(guide, index) in paginatedGuides" :key="guide._id" :listing="guide"
+                        :index="index" />
                 </div>
             </section>
 
