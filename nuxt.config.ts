@@ -37,7 +37,9 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static'
   },
-
+  robots: { 
+    robotsTxt: false 
+  },
   modules: [
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
